@@ -1,0 +1,179 @@
+[
+  {
+    "id": "animals",
+    "title": "Животные",
+    "level": 2,
+    "vocab": {
+      "dog": ["собака (сущ.)"],
+      "loyal": ["верный, преданный (прил.)"],
+      "friend": ["друг (сущ.)"],
+      "sleeps": ["спит — sleep, 3 л. ед.ч. (гл.)"],
+      "feed": ["кормить (гл.)"],
+      "fishes": ["рыбы — fish, ед.ч. (сущ.)"],
+      "walks": ["гуляет — walk, 3 л. ед.ч. (гл.)"],
+      "zoo": ["зоопарк (сущ.)"],
+      "wild": ["дикий (прил.)"],
+      "horses": ["лошади — horse, ед.ч. (сущ.)"],
+      "fast": ["быстрый (прил./нар.)"],
+      "birds": ["птицы — bird, ед.ч. (сущ.)"],
+      "sing": ["петь (гл.)"]
+    },
+    "sentences": [
+      { "en": "A dog is a loyal friend.", "ru": "Собака — верный друг.", "rule": "Один (a) + существительное в ед.ч. Loyal — «верный».", "words": {} },
+      { "en": "My cat sleeps on the sofa all day.", "ru": "Мой кот спит на диване весь день.", "rule": "On the sofa — «на диване». All day — «весь день».", "words": { "all": ["весь, весь день (прил./нар.)"] } },
+      { "en": "We feed the fish every evening.", "ru": "Мы кормим рыб каждый вечер.", "rule": "Feed — «кормить». Every evening — «каждый вечер» (режим дня).", "words": {} },
+      { "en": "My friends walk the dog in the park.", "ru": "Мои друзья гуляют с собакой в парке.", "rule": "Walk the dog — «гулять с собакой» (dog без предлога — дополнение).", "words": { "park": ["парк (сущ.)"] } },
+      { "en": "The zoo has many wild animals.", "ru": "В зоопарке много диких животных.", "rule": "Many + мн.ч. Animal — «животное». Has — «имеет».", "words": { "many": ["много (прил.)"], "animals": ["животные — animal, ед.ч. (сущ.)"] } },
+      { "en": "Horses are strong and fast.", "ru": "Лошади сильные и быстрые.", "rule": "Мн.ч. horses → are. Два прилагательных через and.", "words": {} },
+      { "en": "The birds sing in the morning.", "ru": "Птицы поют утром.", "rule": "Sing — «петь» (гласные). In the morning — «утром».", "words": {} }
+    ]
+  },
+  {
+    "id": "clothes",
+    "title": "Одежда",
+    "level": 2,
+    "vocab": {
+      "wear": ["носить (одежду) (гл.)"],
+      "white": ["белый (прил.)"],
+      "shirt": ["рубашка (сущ.)"],
+      "boots": ["ботинки — boot, ед.ч. (сущ.)"],
+      "too": ["слишком (нар.)"],
+      "buys": ["покупает — buy, 3 л. ед.ч. (гл.)"],
+      "sweater": ["свитер (сущ.)"],
+      "comfortable": ["удобный (прил.)"],
+      "size": ["размер (сущ.)"],
+      "forty-two": ["сорок два (числ.)"],
+      "jacket": ["куртка (сущ.)"],
+      "fits": ["подходит — fit, 3 л. ед.ч. (гл.)"],
+      "red": ["красный (прил.)"],
+      "coat": ["пальто (сущ.)"]
+    },
+    "sentences": [
+      { "en": "I wear a white shirt to school.", "ru": "В школу я ношу белую рубашку.", "rule": "Wear — «носить» (не put on, это «надеть»). To school — «в школу».", "words": {} },
+      { "en": "These boots are too small.", "ru": "Эти ботинки слишком маленькие.", "rule": "These — «эти» (мн.ч.). Too small — «слишком маленькие».", "words": { "these": ["эти (указат.)"], "small": ["маленький (прил.)"] } },
+      { "en": "My mom buys new clothes in spring.", "ru": "Мама покупает новую одежду весной.", "rule": "Clothes — только мн.ч. (no «a clothes»). In spring — «весной».", "words": { "clothes": ["одежда (сущ., мн.ч.)"], "new": ["новый (прил.)"] } },
+      { "en": "This sweater is warm and comfortable.", "ru": "Этот свитер тёплый и удобный.", "rule": "Это + прилагательные после be. Order: цвет/качество, потом ощущение.", "words": {} },
+      { "en": "Your size is forty-two.", "ru": "Ваш размер — сорок два.", "rule": "Size — «размер». Числа после is пишутся цифрами или словами.", "words": {} },
+      { "en": "The jacket fits me well.", "ru": "Куртка хорошо мне идёт.", "rule": "Fit — «подходить по размеру». Well — «хорошо» (наречие к глаголу).", "words": { "well": ["хорошо (нар.)"] } },
+      { "en": "I like my red coat very much.", "ru": "Мне очень нравится моё красное пальто.", "rule": "Very much — «очень» (в конце). Цвет перед существительным.", "words": {} }
+    ]
+  },
+  {
+    "id": "city",
+    "title": "Мой город",
+    "level": 2,
+    "vocab": {
+      "street": ["улица (сущ.)"],
+      "quiet": ["тихая (прил.)"],
+      "bakery": ["пекарня (сущ.)"],
+      "near": ["рядом, недалеко (предл./прил.)"],
+      "traffic": ["дорожное движение (сущ.)"],
+      "light": ["светофор — traffic light; свет (сущ.)"],
+      "cross": ["пересекать (гл.)"],
+      "carefully": ["аккуратно, осторожно (нар.)"],
+      "busy": ["занятый; оживлённый (прил.)"],
+      "tourists": ["туристы — tourist, ед.ч. (сущ.)"],
+      "visit": ["посещать (гл.)"],
+      "monument": ["памятник (сущ.)"],
+      "bridge": ["мост (сущ.)"],
+      "river": ["река (сущ.)"]
+    },
+    "sentences": [
+      { "en": "My house is on a quiet street.", "ru": "Мой дом стоит на тихой улице.", "rule": "On a street — «на улице» (предлог on).", "words": {} },
+      { "en": "There is a bakery near our house.", "ru": "Рядом с нашим домом есть пекарня.", "rule": "Near — «рядом с, недалеко от» (предлог).", "words": {} },
+      { "en": "Look! The traffic light is red.", "ru": "Смотри! Светофор красный.", "rule": "Traffic light — «светофор». Light здесь — «светофор», не «свет».", "words": {} },
+      { "en": "We cross the road carefully.", "ru": "Мы аккуратно переходим дорогу.", "rule": "Cross the road — «переходить дорогу». Carefully — наречие в конце.", "words": { "road": ["дорога (сущ.)"] } },
+      { "en": "The city is big and busy.", "ru": "Город большой и оживлённый.", "rule": "Busy — о людях: «занятый»; о городе — «живой, оживлённый».", "words": {} },
+      { "en": "Tourists visit the old monument.", "ru": "Туристы посещают старый памятник.", "rule": "Visit — «посещать» (место, человека). Old — «старый».", "words": { "old": ["старый (прил.)"] } },
+      { "en": "There is a long bridge over the river.", "ru": "Через реку идёт длинный мост.", "rule": "Over the river — «над рекой, через реку» (мост через).", "words": { "long": ["длинный (прил.)"] } }
+    ]
+  },
+  {
+    "id": "sports",
+    "title": "Спорт",
+    "level": 2,
+    "vocab": {
+      "soccer": ["футбол (амер.) (сущ.)"],
+      "team": ["команда (сущ.)"],
+      "wins": ["выигрывает — win, 3 л. ед.ч. (гл.)"],
+      "game": ["игра, матч (сущ.)"],
+      "runs": ["бегает — run, 3 л. ед.ч. (гл.)"],
+      "faster": ["быстрее — сравн. ст. от fast (нар.)"],
+      "practice": ["тренироваться (гл.); практика (сущ.)"],
+      "tuesday": ["вторник (сущ.)"],
+      "scores": ["забивает (гол) — score (гл.)"],
+      "goal": ["гол (сущ.)"],
+      "match": ["матч (сущ.)"],
+      "exciting": ["взволновающий, захватывающий (прил.)"],
+      "champion": ["чемпион (сущ.)"],
+      "strong": ["сильный (прил.)"]
+    },
+    "sentences": [
+      { "en": "I play soccer with my friends.", "ru": "Я играю в футбол с друзьями.", "rule": "Play + вид спорта без артикля (play soccer, not «the soccer»).", "words": {} },
+      { "en": "The team wins the game.", "ru": "Команда выигрывает матч.", "rule": "Team — команда (ед.ч.) → wins. Win the game — «выигрывать игру».", "words": {} },
+      { "en": "She runs faster than I do.", "ru": "Она бегает быстрее, чем я.", "rule": "Сравнительная степень: fast → faster + than. I do — «я (бегу)» (избегает повтора глагола).", "words": {} },
+      { "en": "We practice every Tuesday.", "ru": "Мы тренируемся по вторникам.", "rule": "Every Tuesday — «каждый вторник / по вторникам».", "words": {} },
+      { "en": "He scores a goal!", "ru": "Он забивает гол!", "rule": "Score a goal — «забить гол». Восклицательный знак — эмоция.", "words": {} },
+      { "en": "The match is very exciting.", "ru": "Матч очень захватывающий.", "rule": "Exciting — «взволновающий» (о предмете). Excited — «взволнованный» (о человеке).", "words": {} },
+      { "en": "The champion is strong and fast.", "ru": "Чемпион сильный и быстрый.", "rule": "Champion — «чемпион». Порядок слов простой: is + прилагательные.", "words": {} }
+    ]
+  },
+  {
+    "id": "shopping",
+    "title": "Покупки",
+    "level": 2,
+    "vocab": {
+      "shopping": ["покупки — go shopping (сущ.)"],
+      "saturdays": ["субботы — saturday, ед.ч. (сущ.)"],
+      "dress": ["платье (сущ.)"],
+      "expensive": ["дорогой (прил.)"],
+      "much": ["сколько; много (нар./прил.)"],
+      "shoes": ["обувь — shoe, ед.ч. (сущ.)"],
+      "fit": ["подходить (по размеру) (гл.)"],
+      "sale": ["распродажа (сущ.)"],
+      "card": ["карта (банковская) (сущ.)"],
+      "cash": ["наличные (сущ.)"],
+      "store": ["магазин (сущ.)"],
+      "opens": ["открывается — open, 3 л. ед.ч. (гл.)"]
+    },
+    "sentences": [
+      { "en": "We go shopping on Saturdays.", "ru": "Мы ходим за покупками по субботам.", "rule": "Go shopping — «ходить за покупками» (shopping — герундий).", "words": {} },
+      { "en": "This dress is too expensive.", "ru": "Это платье слишком дорогое.", "rule": "Too + прилагательное — «слишком ...».", "words": {} },
+      { "en": "How much is the book?", "ru": "Сколько стоит книга?", "rule": "How much — «сколько» (цена, нечислительное). Is — «стоит» (в значении цены).", "words": { "book": ["книга (сущ.)"] } },
+      { "en": "I try on the shoes, and they fit.", "ru": "Я примеряю обувь, и она подходит.", "rule": "Try on — «примерять» (фразовый глагол). They fit — «они подходят».", "words": { "try": ["пробовать (гл.)"], "on": ["на (предл.); — часть try on"] } },
+      { "en": "There is a big sale today.", "ru": "Сегодня большая распродажа.", "rule": "Sale — «распродажа» (на скидках). Big sale — «большая распродажа».", "words": { "big": ["большой (прил.)"] } },
+      { "en": "I pay with a card, not cash.", "ru": "Я плачу картой, а не наличными.", "rule": "Pay with — «платить чем». Cash — «наличные».", "words": { "pay": ["платить (гл.)"] } },
+      { "en": "The store opens at nine.", "ru": "Магазин открывается в девять.", "rule": "At nine — «в девять» (точное время). Opens — «открывается» (расписание).", "words": {} }
+    ]
+  },
+  {
+    "id": "travel",
+    "title": "Путешествия",
+    "level": 2,
+    "vocab": {
+      "sea": ["море (сущ.)"],
+      "summer": ["лето (сущ.)"],
+      "airport": ["аэропорт (сущ.)"],
+      "far": ["далеко (прил./нар.)"],
+      "flight": ["перелёт, рейс (сущ.)"],
+      "o'clock": ["— часть выражений точного времени (нар.)"],
+      "pack": ["собирать (вещи) (гл.)"],
+      "bags": ["сумки, чемоданы — bag, ед.ч. (сущ.)"],
+      "night": ["ночь (сущ.)"],
+      "before": ["до, перед (предл./нар.)"],
+      "view": ["вид (на что-то) (сущ.)"],
+      "beautiful": ["красивый (прил.)"],
+      "souvenirs": ["сувениры — souvenir, ед.ч. (сущ.)"],
+      "alone": ["один (нар./прил.)"]
+    },
+    "sentences": [
+      { "en": "We go to the sea every summer.", "ru": "Каждое лето мы едем на море.", "rule": "Go to the sea — «ехать на море» (the sea — с артиклем).", "words": {} },
+      { "en": "The airport is far from the city.", "ru": "Аэропорт далеко от города.", "rule": "Far from — «далеко от». Far — прилагательное после is.", "words": {} },
+      { "en": "My flight is at ten o'clock.", "ru": "Мой рейс в десять часов.", "rule": "O'clock — «ровно в ... часов». Flight — «рейс» (самолёт).", "words": {} },
+      { "en": "I pack my bags the night before.", "ru": "Я собираю вещи ночью перед поездкой.", "rule": "The night before — «вечером накануне». Pack — «паковать, собирать».", "words": {} },
+      { "en": "The view from the window is beautiful.", "ru": "Вид из окна красивый.", "rule": "View — «вид» (на пейзаж). From the window — «из окна».", "words": { "window": ["окно (сущ.)"] } },
+      { "en": "We buy souvenirs for friends.", "ru": "Мы покупаем сувениры для друзей.", "rule": "For friends — «для друзей» (предлог for = «для»).", "words": {} },
+      { "en": "I like to travel alone.", "ru": "Мне нравится путешествовать одному.", "rule": "Alone — «одному» (наречие в конце).", "words": {} }
+    ]
+  }
+]

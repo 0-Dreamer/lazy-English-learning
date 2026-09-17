@@ -1,0 +1,186 @@
+[
+  {
+    "id": "day",
+    "title": "Мой день",
+    "level": 1,
+    "vocab": {
+      "wake": ["просыпаться (гл.)"],
+      "morning": ["утро (сущ.)"],
+      "alarm": ["будильник (сущ.)"],
+      "ring": ["звенеть (гл.); кольцо (сущ.)"],
+      "cup": ["чашка (сущ.)"],
+      "breakfast": ["завтрак (сущ.)"],
+      "brush": ["чистить, протирать (гл.); щётка (сущ.)"],
+      "teeth": ["зубы — мн.ч. от tooth (сущ.)"],
+      "cat": ["кот (сущ.)"],
+      "always": ["всегда (нар.)"],
+      "work": ["работать (гл.); работа (сущ.)"],
+      "bus": ["автобус (сущ.)"],
+      "sometimes": ["иногда (нар.)"],
+      "late": ["поздно (нар.); опоздавший (прил.)"],
+      "angry": ["злой, раздражённый (прил.)"],
+      "never": ["никогда (нар.)"]
+    },
+    "sentences": [
+      { "en": "I wake up at seven in the morning.", "ru": "Я просыпаюсь в семь утра.", "rule": "Present Simple — регулярное действие. Предлог времени: at seven, в in the morning.", "words": {} },
+      { "en": "My alarm clock rings early.", "ru": "Мой будильник звенит рано.", "rule": "3-е лицо ед.ч. (it) — глагол получает окончание -s: ring → rings.", "words": { "early": ["рано (нар.)"] } },
+      { "en": "I drink a cup of coffee for breakfast.", "ru": "Я пью чашку кофе на завтрак.", "rule": "Конструкция «a cup of» — мера количества. For breakfast — «на завтрак» (предлог for).", "words": { "drink": ["пить (гл.)"], "coffee": ["кофе (сущ.)"] } },
+      { "en": "I brush my teeth and wash my face.", "ru": "Я чищу зубы и умываюсь.", "rule": "Два действия соединены союзом and: brush + wash. Face — «лицо» (умываться = wash my face).", "words": { "wash": ["мыть (гл.)"], "face": ["лицо (сущ.)"] } },
+      { "en": "My cat always eats before me.", "ru": "Мой кот всегда ест до меня.", "rule": "Наречие частотности always ставится ПЕРЕД основным глаголом, после be.", "words": { "eat": ["есть (гл.)"] } },
+      { "en": "I go to work by bus every day.", "ru": "Я еду на работу на автобусе каждый день.", "rule": "Go to work — устойчивый оборот «ехать на работу». Способ транспорта: by bus — без артикля.", "words": { "every": ["каждый (прил.)"] } },
+      { "en": "Sometimes I am late, but I am never angry.", "ru": "Иногда я опаздываю, но никогда не злюсь.", "rule": "Союз but соединяет контрастные части. Never в отрицании не требует not.", "words": {} }
+    ]
+  },
+  {
+    "id": "family",
+    "title": "Семья",
+    "level": 1,
+    "vocab": {
+      "family": ["семья (сущ.)"],
+      "big": ["большой (прил.)"],
+      "friendly": ["дружелюбный (прил.)"],
+      "mom": ["мама (разг., сущ.)"],
+      "hospital": ["больница (сущ.)"],
+      "dad": ["папа (разг., сущ.)"],
+      "fish": ["рыба (сущ.); ловить рыбу (гл.)"],
+      "sister": ["сестра (сущ.)"],
+      "brother": ["брат (сущ.)"],
+      "grandma": ["бабушка (разг., сущ.)"],
+      "lives": ["живёт — live, 3 л. ед.ч. (гл.)"],
+      "next to": ["рядом с (предл.)"],
+      "dinner": ["ужин (сущ.)"],
+      "together": ["вместе (нар.)"],
+      "little": ["маленький (прил.)"],
+      "laughs": ["смеётся — laugh, 3 л. ед.ч. (гл.)"],
+      "lot": ["много — в обороте a lot (сущ./нар.)"]
+    },
+    "sentences": [
+      { "en": "My family is big and friendly.", "ru": "Моя семья большая и дружелюбная.", "rule": "Family здесь — ед.ч. (одна семья) → is. Прилагательные идут после глагола be.", "words": {} },
+      { "en": "My mom works in a hospital.", "ru": "Моя мама работает в больнице.", "rule": "Глагол-действие в Present Simple: work → works. In a hospital — место работы.", "words": {} },
+      { "en": "My dad likes to fish on weekends.", "ru": "Мой папа любит рыбачить по выходным.", "rule": "Like + to V — «любить делать». Fish здесь глагол «ловить рыбу». On weekends — «по выходным».", "words": { "likes": ["любит — like, 3 л. ед.ч. (гл.)"] } },
+      { "en": "I have a sister and two brothers.", "ru": "У меня сестра и два брата.", "rule": "Have — «иметь». В английском «у меня есть» = I have, без «у меня».", "words": {} },
+      { "en": "My grandma lives next to us.", "ru": "Моя бабушка живёт рядом с нами.", "rule": "Next to — «рядом с». Объектный падеж us после предлога.", "words": {} },
+      { "en": "We always eat dinner together.", "ru": "Мы всегда ужинаем вместе.", "rule": "Eat dinner — «ужинать» (устойчиво). together — наречие, стоит в конце.", "words": {} },
+      { "en": "My little brother laughs a lot.", "ru": "Мой младший брат много смеётся.", "rule": "A lot — «много» (наречие, без предлога). Прилагательное little — перед существительным.", "words": {} }
+    ]
+  },
+  {
+    "id": "school",
+    "title": "Школа",
+    "level": 1,
+    "vocab": {
+      "subject": ["предмет (учебный) (сущ.)"],
+      "favorite": ["любимый (прил.)"],
+      "english": ["английский язык (сущ.)"],
+      "teacher": ["учитель (сущ.)"],
+      "explains": ["объясняет — explain, 3 л. ед.ч. (гл.)"],
+      "clearly": ["чётко, ясно (нар.)"],
+      "homework": ["домашнее задание (сущ.)"],
+      "library": ["библиотека (сущ.)"],
+      "play": ["играть (гл.)"],
+      "math": ["математика (сущ.)"],
+      "difficult": ["трудный, сложный (прил.)"],
+      "like": ["нравиться (гл.); любить (гл.)"],
+      "friends": ["друзья (сущ., мн.ч.)"]
+    },
+    "sentences": [
+      { "en": "I go to school in the morning.", "ru": "Я хожу в школу утром.", "rule": "Go to school — «ходить в школу» (без the перед school).", "words": {} },
+      { "en": "My favorite subject is English.", "ru": "Мой любимый предмет — английский.", "rule": "Названия языков пишутся с большой буквы. Subject — учебный предмет.", "words": {} },
+      { "en": "Our teacher explains new words clearly.", "ru": "Наш учитель чётко объясняет новые слова.", "rule": "Порядок: подлежащее + глагол + дополнение + наречие. Clearly — «ясно».", "words": { "new": ["новый (прил.)"], "words": ["слова — word, ед.ч. (сущ.)"] } },
+      { "en": "We do our homework after lunch.", "ru": "Мы делаем домашнее задание после обеда.", "rule": "Do homework — устойчивое сочетание. After lunch — «после обеда».", "words": { "lunch": ["обед (сущ.)"] } },
+      { "en": "There is a big library at school.", "ru": "В школе есть большая библиотека.", "rule": "There is / there are — «есть» (для указания на наличие чего-то).", "words": { "at": ["при, в (месте) (предл.)"] } },
+      { "en": "My friends and I play after class.", "ru": "Мои друзья и я играем после урока.", "rule": "После class — «после урока». В английском вежливо ставить себя последним: friends and I.", "words": { "class": ["класс; урок (сущ.)"] } },
+      { "en": "Math is difficult, but I like it.", "ru": "Математика трудная, но мне она нравится.", "rule": "Like + местоимение it — «мне нравится» (в английском «я люблю это»).", "words": {} }
+    ]
+  },
+  {
+    "id": "food",
+    "title": "Еда и напитки",
+    "level": 1,
+    "vocab": {
+      "soup": ["суп (сущ.)"],
+      "bread": ["хлеб (сущ.)"],
+      "lunch": ["обед (сущ.)"],
+      "apples": ["яблоки — apple, ед.ч. (сущ.)"],
+      "fruit": ["фрукт, фрукт как вид (сущ.)"],
+      "sweet": ["сладкий (прил.)"],
+      "hungry": ["голодный (прил.)"],
+      "sandwich": ["бутерброд, сэндвич (сущ.)"],
+      "tomatoes": ["помидоры — tomato, ед.ч. (сущ.)"],
+      "onions": ["лук (сущ., мн.ч.)"],
+      "cooks": ["готовит — cook, 3 л. ед.ч. (гл.)"],
+      "delicious": ["вкусный, восхитительный (прил.)"],
+      "water": ["вода (сущ.)"],
+      "juice": ["сок (сущ.)"]
+    },
+    "sentences": [
+      { "en": "I eat soup and bread for lunch.", "ru": "На обед я ем суп и хлеб.", "rule": "For lunch — «на обед». Eats — ест (гл.), eat — «есть» (пища — сущ.).", "words": { "eat": ["есть, принимать пищу (гл.)"] } },
+      { "en": "Apples are my favorite fruit.", "ru": "Яблоки — мой любимый фрукт.", "rule": "Мн.ч. apples → глагол are. Fruit — «фрукт» в значении категории.", "words": {} },
+      { "en": "This cake is very sweet.", "ru": "Этот торт очень сладкий.", "rule": "Указательное this — «этот». Very усиливает прилагательное.", "words": { "cake": ["торт, пирог (сущ.)"] } },
+      { "en": "I am hungry, so I eat a sandwich.", "ru": "Я голоден, поэтому ем бутерброд.", "rule": "Союз so — «поэтому» (причина → следствие).", "words": {} },
+      { "en": "Tomatoes and onions are in the soup.", "ru": "Помидоры и лук находятся в супе.", "rule": "In the soup — «в супе». Нечислительные существительные без артикля a.", "words": {} },
+      { "en": "My mom cooks delicious dinner.", "ru": "Мама готовит вкусный ужин.", "rule": "Cook dinner — «готовить ужин». Без артикля перед dinner как приемом пищи.", "words": {} },
+      { "en": "I drink water, not juice, after dinner.", "ru": "После ужина я пью воду, а не сок.", "rule": "Not juice — противопоставление. After dinner — «после ужина».", "words": { "drink": ["пить (гл.)"] } }
+    ]
+  },
+  {
+    "id": "house",
+    "title": "Дом",
+    "level": 1,
+    "vocab": {
+      "bedrooms": ["спальни — bedroom, ед.ч. (сущ.)"],
+      "kitchen": ["кухня (сущ.)"],
+      "bright": ["яркий, светлый (прил.)"],
+      "table": ["стол (сущ.)"],
+      "garden": ["сад, огород (сущ.)"],
+      "keep": ["хранить, держать (гл.)"],
+      "books": ["книги — book, ед.ч. (сущ.)"],
+      "shelf": ["полка (сущ.)"],
+      "open": ["открытый (прил.); открыть (гл.)"],
+      "window": ["окно (сущ.)"],
+      "closed": ["закрытый (прил.)"],
+      "watch": ["смотреть (телевизор) (гл.); часы (сущ.)"],
+      "sofa": ["диван (сущ.)"],
+      "evening": ["вечер (сущ.)"],
+      "quiet": ["тихий (прил.)"],
+      "warm": ["тёплый (прил.)"]
+    },
+    "sentences": [
+      { "en": "Our house has three bedrooms.", "ru": "В нашем доме три спальни.", "rule": "Have/has — «иметь» (в значении «есть»). Три — число three.", "words": { "three": ["три (числ.)"] } },
+      { "en": "The kitchen is small but bright.", "ru": "Кухня маленькая, но светлая.", "rule": "Два противоположных прилагательных соединяются союзом but.", "words": { "small": ["маленький (прил.)"] } },
+      { "en": "There is a table in the garden.", "ru": "В саду стоит стол.", "rule": "There is — «есть». In the garden — «в саду» (конкретный сад — the).", "words": {} },
+      { "en": "I keep my books on a shelf.", "ru": "Я храню свои книги на полке.", "rule": "On a shelf — «на полке». Keep — «хранить, держать».", "words": {} },
+      { "en": "The door is open and the window is closed.", "ru": "Дверь открыта, а окно закрыто.", "rule": "Open/closed здесь — прилагательные (состояние), а не глаголы.", "words": { "door": ["дверь (сущ.)"] } },
+      { "en": "We watch TV on the sofa in the evening.", "ru": "Вечером мы смотрим телевизор на диване.", "rule": "Watch TV — «смотреть ТВ». Местоимение TV без артикля.", "words": { "TV": ["телевизор (сущ.)"] } },
+      { "en": "My room is quiet and warm.", "ru": "Моя комната тихая и тёплая.", "rule": "Room — «комната». После be — два прилагательных через and.", "words": {} }
+    ]
+  },
+  {
+    "id": "weather",
+    "title": "Погода",
+    "level": 1,
+    "vocab": {
+      "weather": ["погода (сущ.)"],
+      "nice": ["приятный (прил.)"],
+      "today": ["сегодня (нар./сущ.)"],
+      "sunny": ["солнечный (прил.)"],
+      "spring": ["весна (сущ.)"],
+      "umbrella": ["зонт (сущ.)"],
+      "rain": ["дождь (сущ.); дождить (гл.)"],
+      "winter": ["зима (сущ.)"],
+      "wind": ["ветер (сущ.)"],
+      "strong": ["сильный (прил.)"],
+      "shining": ["светит — shine (гл.)"],
+      "walk": ["прогулка (сущ.); ходить, гулять (гл.)"]
+    },
+    "sentences": [
+      { "en": "The weather is nice today.", "ru": "Сегодня хорошая погода.", "rule": "Weather — «погода», всегда с the и в ед.ч. Nice — «приятная».", "words": {} },
+      { "en": "It is sunny and warm in spring.", "ru": "Весной солнечно и тепло.", "rule": "Местоимение it — «погода, она» (it is sunny — «солнечно»).", "words": {} },
+      { "en": "Take an umbrella, it will rain.", "ru": "Возьми зонт, будет дождь.", "rule": "Take — «возьми» (повелительное наклонение). Will rain — будущее время.", "words": { "take": ["брать, взять (гл.)"] } },
+      { "en": "It is very cold in winter.", "ru": "Зимой очень холодно.", "rule": "In winter — «зимой». Cold — «холодный/холодно».", "words": { "cold": ["холодный; холодно (прил./нар.)"] } },
+      { "en": "The wind is strong today.", "ru": "Сегодня ветер сильный.", "rule": "Wind — «ветер», с артиклем the. Strong — «сильный».", "words": {} },
+      { "en": "We do not like rainy days.", "ru": "Мы не любим дождливые дни.", "rule": "Отрицание в Present Simple: do not + глагол. Rainy days — «дождливые дни».", "words": { "rainy": ["дождливый (прил.)"], "days": ["дни — day, ед.ч. (сущ.)"] } },
+      { "en": "The sun is shining, so we go for a walk.", "ru": "Светит солнце, поэтому мы идём гулять.", "rule": "Is shining — Present Continuous (действие сейчас). Go for a walk — «идти гулять».", "words": {} }
+    ]
+  }
+]
