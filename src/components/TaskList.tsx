@@ -57,11 +57,11 @@ export default function TaskList({ exercises, progress, onOpen, initialTheme }: 
             </button>
           ))}
         </div>
-        <div className="flex w-full flex-wrap items-center gap-2 sm:ml-auto sm:w-auto">
+        <div className="ml-auto flex flex-wrap items-center gap-2">
           <select
             value={theme}
             onChange={(e) => setTheme(e.target.value)}
-            className="h-9 flex-1 rounded-lg border border-line bg-card px-2.5 text-xs font-bold text-ink-soft outline-none transition focus:border-ink/40 sm:flex-none"
+            className="h-9 rounded-lg border border-line bg-card px-2.5 text-xs font-bold text-ink-soft outline-none transition focus:border-ink/40"
           >
             <option value="all">Все темы</option>
             {themes.map((t) => (
@@ -74,7 +74,7 @@ export default function TaskList({ exercises, progress, onOpen, initialTheme }: 
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Поиск по тексту…"
-            className="h-9 w-full rounded-lg border border-line bg-card px-3 text-xs font-semibold text-ink outline-none transition placeholder:text-muted/70 focus:border-ink/40 sm:w-44 md:w-56"
+            className="h-9 w-44 rounded-lg border border-line bg-card px-3 text-xs font-semibold text-ink outline-none transition placeholder:text-muted/70 focus:border-ink/40 md:w-56"
           />
         </div>
       </Card>
