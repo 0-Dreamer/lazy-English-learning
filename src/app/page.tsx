@@ -6,17 +6,7 @@ import { applyResult, loadProgress, touchLastTask, type Progress } from "@/lib/s
 import Dashboard from "@/components/Dashboard";
 import TaskList from "@/components/TaskList";
 import Exercise from "@/components/Exercise";
-import { Card } from "@/components/bits";
-import {
-  IconCheck,
-  IconDownload,
-  IconExternal,
-  IconFlame,
-  IconGrid,
-  IconHome,
-  IconVercel,
-  IconX,
-} from "@/components/icons";
+import { IconFlame, IconGrid, IconHome } from "@/components/icons";
 
 type View =
   | { name: "home" }
@@ -27,7 +17,6 @@ export default function Home() {
   const exercises = useMemo(() => allExercises(), []);
   const [progress, setProgress] = useState<Progress | null>(null);
   const [view, setView] = useState<View>({ name: "home" });
-  const [showVercelModal, setShowVercelModal] = useState(false);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -152,15 +141,6 @@ export default function Home() {
                 <IconFlame className="h-3.5 w-3.5" /> {progress.streak}
               </span>
             )}
-
-            <button
-              onClick={() => setShowVercelModal(true)}
-              className="inline-flex h-8 items-center gap-1.5 rounded-lg border border-line bg-card px-2.5 text-xs font-bold text-ink transition hover:border-ink/40"
-              title="Инструкция по развертыванию на Vercel"
-            >
-              <IconVercel className="h-3 w-3" />
-              <span>Vercel</span>
-            </button>
           </div>
         </div>
       </header>
@@ -180,143 +160,9 @@ export default function Home() {
             >
               {copied ? "Ссылка скопирована!" : "Скопировать ссылку"}
             </button>
-            <span className="text-line">|</span>
-            <button
-              onClick={() => setShowVercelModal(true)}
-              className="inline-flex items-center gap-1 font-bold text-ink-soft hover:text-ink"
-            >
-              <IconVercel className="h-3 w-3" /> Деплой на Vercel
-            </button>
           </div>
         </div>
       </footer>
-
-      {/* Модальное окно деплоя на Vercel */}
-      {showVercelModal && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/50 p-4 backdrop-blur-sm"
-          onClick={() => setShowVercelModal(false)}
-        >
-          <Card
-            className="max-h-[90vh] w-full max-w-xl animate-pop overflow-y-auto p-5 md:p-6"
-            onClick={(e: React.MouseEvent) => e.stopPropagation()}
-          >
-            <div className="mb-4 flex items-start justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-ink text-paper">
-                  <IconVercel className="h-4 w-4" />
-                </div>
-                <div>
-                  <h2 className="font-display text-lg font-bold text-ink">
-                    Как опубликовать сайт на Vercel
-                  </h2>
-                  <p className="text-xs text-muted">Сайт готов к бесплатному размещению</p>
-                </div>
-              </div>
-              <button
-                onClick={() => setShowVercelModal(false)}
-                className="rounded-lg border border-line p-1.5 text-muted hover:bg-line-soft hover:text-ink"
-              >
-                <IconX className="h-4 w-4" />
-              </button>
-            </div>
-
-            <div className="space-y-4 text-sm text-ink-soft">
-              <div className="rounded-xl border border-good/30 bg-good-soft p-3.5 text-xs text-good-deep">
-                <strong>Сайт уже сейчас доступен в сети!</strong>
-                <p className="mt-1">
-                  Текущий публичный адрес в интернете:
-                </p>
-                <div className="mt-2 flex items-center gap-2">
-                  <code className="rounded bg-card px-2 py-1 font-mono text-[11px] font-bold text-ink">
-                    {typeof window !== "undefined" ? window.location.origin : "https://3000-iwwxns3k50gesxbhi3mhp.e2b.app"}
-                  </code>
-                  <button
-                    onClick={copyCurrentUrl}
-                    className="inline-flex items-center gap-1 rounded bg-good px-2 py-1 text-[11px] font-bold text-card hover:bg-good-deep"
-                  >
-                    {copied ? <IconCheck className="h-3 w-3" /> : null}
-                    {copied ? "Скопировано!" : "Копировать"}
-                  </button>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-ink">
-                  Шаг 1: Скачайте готовый архив проекта
-                </h3>
-                <p className="mt-1 text-xs leading-relaxed text-muted">
-                  В архив включён весь исходный код: Next.js 16, база из 1032 упражнений, словарь и все стили.
-                </p>
-                <a
-                  href="/project-source.zip"
-                  download="pravopisimo-spelling-trainer.zip"
-                  className="mt-2.5 inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-xs font-bold text-card transition hover:bg-primary-deep"
-                >
-                  <IconDownload className="h-4 w-4" /> Скачать исходный код проекта (ZIP)
-                </a>
-              </div>
-
-              <div className="border-t border-line-soft pt-3">
-                <h3 className="font-bold text-ink">
-                  Шаг 2: Разверните на Vercel (1 минута)
-                </h3>
-                <ol className="mt-2 list-decimal space-y-2 pl-4 text-xs leading-relaxed">
-                  <li>
-                    Распакуйте архив и загрузите его в свой репозиторий на{" "}
-                    <a
-                      href="https://github.com/new"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-bold text-primary underline"
-                    >
-                      GitHub.com <IconExternal className="inline h-3 w-3" />
-                    </a>
-                  </li>
-                  <li>
-                    Перейдите на{" "}
-                    <a
-                      href="https://vercel.com/new"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-bold text-primary underline"
-                    >
-                      vercel.com/new <IconExternal className="inline h-3 w-3" />
-                    </a>{" "}
-                    и выберите ваш репозиторий (кнопка <strong>Import</strong>).
-                  </li>
-                  <li>
-                    Нажмите <strong>Deploy</strong>. Vercel сам выполнит сборку за 30 секунд.
-                  </li>
-                  <li>
-                    Вы получите постоянный персональный адрес вида{" "}
-                    <code className="rounded bg-card-2 px-1 py-0.5 font-mono font-bold text-ink">
-                      https://ваш-проект.vercel.app
-                    </code>
-                    , доступный любому человеку в Chrome!
-                  </li>
-                </ol>
-              </div>
-
-              <div className="rounded-xl border border-line-soft bg-card-2 p-3 text-xs">
-                <span className="font-bold text-ink">Или через консоль Vercel CLI:</span>
-                <pre className="mt-1 overflow-x-auto rounded bg-ink p-2 font-mono text-[11px] text-paper">
-                  {`npm i -g vercel\nvercel login\nvercel`}
-                </pre>
-              </div>
-            </div>
-
-            <div className="mt-5 flex justify-end">
-              <button
-                onClick={() => setShowVercelModal(false)}
-                className="rounded-xl border border-line bg-card px-4 py-2 text-xs font-bold text-ink-soft hover:bg-line-soft hover:text-ink"
-              >
-                Понятно, закрыть
-              </button>
-            </div>
-          </Card>
-        </div>
-      )}
     </div>
   );
 }
