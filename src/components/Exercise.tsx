@@ -17,6 +17,10 @@ import {
 const LETTER_RE = /[A-Za-zÀ-ÿ]/;
 const WORD_SPLIT = /([0-9A-Za-zÀ-ÿ][0-9A-Za-zÀ-ÿ'’-]*)/g;
 
+// Невидимый символ-«якорь» в скрытом поле ввода. Нужен, чтобы на телефоне
+// можно было отличить нажатие Backspace (якорь исчез) от ввода буквы.
+const SENTINEL = "\u200B";
+
 interface Slot {
   ch: string;
   letterIndex: number; // -1 для знаков препинания
@@ -155,6 +159,8 @@ export default function Exercise({ ex, index, total, best, onBack, onNext, onRes
   onResultRef.current = onResult;
 
   const curCellRef = useRef<HTMLDivElement>(null);
+  // скрытое настоящее поле ввода — именно оно вызывает клавиатуру на телефоне
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const totalLetters = parsed.letters.length;
   const okNow = useMemo(
@@ -174,9 +180,33 @@ export default function Exercise({ ex, index, total, best, onBack, onNext, onRes
   const reset = () => {
     setTyped([]);
     setDone(null);
+    // вызывается прямо из клика — поэтому телефон разрешает открыть клавиатуру
+    inputRef.current?.focus();
   };
 
-  // клавиатура
+  // ввод с экранной клавиатуры телефона (там keydown часто приходит как "Unidentified")
+  const handleMobileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const el = e.target;
+    const raw = el.value;
+    el.value = SENTINEL; // всегда возвращаем поле в исходное состояние
+    if (doneRef.current || ruleRef.current) return;
+
+    if (raw === "") {
+      // якорь пропал — значит, нажали Backspace
+      setTyped((t) => t.slice(0, -1));
+      return;
+    }
+
+    const added = Array.from(raw.split(SENTINEL).join("")).filter((c) => LETTER_RE.test(c));
+    if (added.length === 0) return;
+    setTyped((t) => {
+      const next = [...t];
+      for (const c of added) if (next.length < totalLetters) next.push(c);
+      return next;
+    });
+  };
+
+  // клавиатура (физическая, на компьютере)
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (doneRef.current || ruleRef.current) return;
@@ -196,6 +226,11 @@ export default function Exercise({ ex, index, total, best, onBack, onNext, onRes
     return () => window.removeEventListener("keydown", handler);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ex.id, totalLetters]);
+
+  // когда открыто окно результата или правил — прячем клавиатуру на телефоне
+  useEffect(() => {
+    if (done || showRule) inputRef.current?.blur();
+  }, [done, showRule]);
 
   // автоскролл к текущей ячейке
   useEffect(() => {
@@ -324,7 +359,7 @@ export default function Exercise({ ex, index, total, best, onBack, onNext, onRes
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-3 rounded-lg p-2">
+            <div className="relative flex flex-wrap items-center gap-x-4 gap-y-3 rounded-lg p-2">
               {parsed.groups.map((g, gi) => (
                 <div key={gi} className="flex items-center gap-[3px]">
                   {g.slots.map((s, si) => {
@@ -369,13 +404,36 @@ export default function Exercise({ ex, index, total, best, onBack, onNext, onRes
                   })}
                 </div>
               ))}
+
+              {/* Невидимое поле ввода поверх клеток: по тапу на клетки открывается клавиатура телефона */}
+              <input
+                ref={inputRef}
+                type="text"
+                defaultValue={SENTINEL}
+                onChange={handleMobileInput}
+                onFocus={(e) => {
+                  const el = e.currentTarget;
+                  el.value = SENTINEL;
+                  el.setSelectionRange(SENTINEL.length, SENTINEL.length);
+                }}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck={false}
+                inputMode="text"
+                enterKeyHint="done"
+                aria-label="Поле для ввода предложения"
+                className="absolute inset-0 h-full w-full cursor-text border-0 bg-transparent p-0 opacity-0 outline-none"
+                style={{ fontSize: 16, caretColor: "transparent", color: "transparent" }}
+              />
             </div>
 
             <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] font-semibold text-muted">
-              <span>
+              <span className="md:hidden">Нажми на клетки, чтобы открыть клавиатуру</span>
+              <span className="hidden sm:inline">
                 <Kbd>Enter</Kbd> — закончить
               </span>
-              <span>
+              <span className="hidden sm:inline">
                 <Kbd>Backspace</Kbd> — стереть последнюю
               </span>
               <span className="hidden items-center gap-1 sm:flex">
@@ -567,7 +625,10 @@ export default function Exercise({ ex, index, total, best, onBack, onNext, onRes
                 <IconRefresh className="h-4 w-4" /> Попробовать снова
               </button>
               <button
-                onClick={onNext}
+                onClick={() => {
+                  inputRef.current?.focus();
+                  onNext();
+                }}
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-card transition hover:bg-primary-deep"
               >
                 Следующее задание <IconNext className="h-4 w-4" />
